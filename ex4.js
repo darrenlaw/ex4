@@ -6,7 +6,7 @@
 $(document).ready(function () {
     console.log("ready");
 
-    
+
     //preload
     //create array to hold images
     var gifimages = ["images/fish.gif", "images/charm1.gif", "images/keys1.gif", "images/ipod.gif", "images/pencil.gif"];
@@ -34,9 +34,16 @@ $(document).ready(function () {
 
     $(window).ready(function () {
         $('#background').delay(1000).animate({
-            opacity: 1,
-            top: 50
-        }, 2000);
+                opacity: 1,
+                top: 50
+            }, 2000,
+            function () {
+                $('footer').animate({
+                    opacity: 1,
+
+                }, 2000);
+
+            });
 
     });
 

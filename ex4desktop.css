@@ -155,7 +155,8 @@ footer {
     height:50px;
     left:150px;
     top:740px;
-    text-align: center;    
+    text-align: center;
+    opacity:0;
 }
 
 footer a:link {
